@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writers palace | Notifications</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+ 
+<!-- header -->
+ <header class="main-head pb-2">
+    <!-- Navbar -->
+ <nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
+    <!-- Container wrapper -->
+    <div class="container-fluid navbaro">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            height="15"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Jobs
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">My Jobs</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">All Job Posts</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">All Contracts</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Post a Job</a>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Talent
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Discover</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Your Hires</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Recently Viewed</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Saved Talent</a>
+              </li>
+            </ul>
+          </li>
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Reports
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
+                <a class="dropdown-item" href="#">Weekly Summary</a>
+                <hr>
+              </li>
+              <li class="pb-2">
+                <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
+                <a class="dropdown-item" href="#">Transaction History</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Budgets</a>
+              </li>
+            </ul>
+          </li>
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Help
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Help and Support</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Community and Forums</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Dispute</a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center justify-content-end">
+        <!-- Center elements -->
+        <div class="d-flex justify-content-center me-3">
+            <!-- Search form -->
+            <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+                <input
+                    autocomplete="on"
+                    type="search"
+                    class="ps-5 pe-3 inpo rounded-pill"
+                    placeholder='Search talent, category...'
+                    required
+                />
+                <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+            </form>
+     </div>
+     <!-- Center Elements -->
+
+        <!-- Icon -->
+        <a class="text-reset px-2" href="#">
+          <i class="fas fa-envelope text-white"></i>
+        </a>
+
+        <!-- Notifications -->
+        <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+
+
+        <!-- Notifications -->
+        <div class="d-none d-md-block dropdown px-2">
+            <a
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+    
+            <div
+              class="dropdown-menu dropdown-menu-end menon p-2"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+            
+             <!-- item -->
+             <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                Some notification title goes here
+                <hr>
+             </a>
+             <!-- item -->
+             <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                Some notification title goes here
+                <hr>
+             </a>
+
+             <a href="#" class="py-3 ">more</a>
+            </div>
+    
+          </div>
+  
+        
+  
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="../assets/images/ableton.jpg"
+              class="rounded-circle"
+              height="25"
+              width="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+ </header>
+
+<!-- header container -->
+<div class="container-fluid px-2" style="margin-top: 88px;">
+    <span class="h5 d-block text-start fw-bold mb-3">Notifications</span>
+
+    <!-- Today notifications -->
+    <div class="posto p-3 mb-4">
+        <span class="h6 fw-bold d-block text-start">Today</span>
+
+        <div class="row">
+            <!-- no notifications -->
+            <div class="col-12 p-2">
+                <span class="d-block text-center">No new notifications</span>
+            </div>
+
+            <!-- notifications -->
+            <div class="col-12 p-2">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Older notifications -->
+    <div class="posto p-3 mb-4">
+        <span class="h6 fw-bold d-block text-start">Earlier</span>
+
+        <div class="row">
+            <!-- no notifications -->
+            <div class="col-12 p-2">
+                <span class="d-block text-center">No new notifications</span>
+            </div>
+
+            <!-- notifications for weekly billing report -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        Brownman,here's your
+                        <a href="#" class="text-decoration-none">weekly billing report.</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 bottom-50 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for recent sign in -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-user-circle"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        A recent sign-in to your account (1a65bdb5) from an unknown device or browser.
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-50 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for payment -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-dollar-sign"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        A payment of $20.60 has been applied to your 
+                        <a href="#" class="text-decoration-none">financial account</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for contracts -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <!-- image -->
+                    <img src="../assets/images/image-1.jpeg" alt="User name" height="24px" width="24px" class="rounded-circle mx-0">
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start fw-bold mb-2">
+                        <span class="text-uppercase">Freelancer NAme's</span> contract:
+                        <a href="#" class="text-decoration-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet.</a>
+                        started on 08-15-2022.
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for proposal from talents -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                   <i class="fas fa-rocket"></i>
+                </span>
+                <div class="d-flex flex-column me-2">
+                    <span class="d-block text-start fw-bold mb-2">
+                        <span class="text-uppercase">Freelancer NAme's</span> applied to your job
+                        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet"
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+               <div class="mx-2">
+                <a href="#" class="btn btn-outline-success btn-sm rounded-pill">view proposal</a>
+               </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for Visa payment -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-dollar-sign"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        Payment method Visa 2764 was recently added to Financial Account 
+                        <a href="#" class="text-decoration-none">Client Name</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

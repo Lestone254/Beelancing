@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writers palace | Messages</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+ 
+<!-- header -->
+ <header class="main-head pb-2">
+    <!-- Navbar -->
+ <nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
+    <!-- Container wrapper -->
+    <div class="container-fluid navbaro">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            height="15"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Jobs
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">My Jobs</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">All Job Posts</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">All Contracts</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Post a Job</a>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Talent
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Discover</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Your Hires</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Recently Viewed</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Saved Talent</a>
+              </li>
+            </ul>
+          </li>
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Reports
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
+                <a class="dropdown-item" href="#">Weekly Summary</a>
+                <hr>
+              </li>
+              <li class="pb-2">
+                <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
+                <a class="dropdown-item" href="#">Transaction History</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Budgets</a>
+              </li>
+            </ul>
+          </li>
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Help
+              <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Help and Support</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Community and Forums</a>
+              </li>
+              <li class="pb-2">
+                <a class="dropdown-item" href="#">Dispute</a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center justify-content-end">
+        <!-- Center elements -->
+        <div class="d-flex justify-content-center me-3">
+            <!-- Search form -->
+            <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+                <input
+                    autocomplete="on"
+                    type="search"
+                    class="ps-5 pe-3 inpo rounded-pill"
+                    placeholder='Search talent, category...'
+                    required
+                />
+                <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+            </form>
+     </div>
+     <!-- Center Elements -->
+
+        <!-- Icon -->
+        <a class="text-reset px-2" href="#">
+          <i class="fas fa-envelope text-white"></i>
+        </a>
+
+        <!-- Notifications -->
+        <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+
+
+        <!-- Notifications -->
+        <div class="d-none d-md-block dropdown px-2">
+            <a
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+    
+            <div
+              class="dropdown-menu dropdown-menu-end menon p-2"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+            
+             <!-- item -->
+             <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                Some notification title goes here
+                <hr>
+             </a>
+             <!-- item -->
+             <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                Some notification title goes here
+                <hr>
+             </a>
+
+             <a href="#" class="py-3 ">more</a>
+            </div>
+    
+          </div>
+  
+        
+  
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="../assets/images/ableton.jpg"
+              class="rounded-circle"
+              height="25"
+              width="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+ </header>
+
+<!-- header container -->
+<div class="container-fluid px-2" style="margin-top: 58px;">
+    <div class="row">
+        <div class="col-lg-5 col-12">
+            <div class="d-flex justify-content-start mb-4">
+                <!-- Search form -->
+                <form class="d-flex input-group w-auto my-auto nav-search">
+                    <input
+                        autocomplete="on"
+                        type="search"
+                        class="ps-5 pe-3 inpo border border-secondary rounded-pill"
+                        placeholder='Search messages...'
+                        required
+                    />
+                    <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
+
+            <!-- messages container -->
+            <div data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+                <ul class="list-unstyled mb-0">
+                  <li class="p-2 border-bottom">
+                    <!-- for lg screens -->
+                    <a href="#!" class="d-none d-md-flex justify-content-between">
+                      <div class="d-flex flex-row">
+                        <div>
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                            alt="avatar" class="d-flex align-self-center me-3" width="60">
+                          <span class="badge bg-success badge-dot"></span>
+                        </div>
+                        <div class="pt-1">
+                          <p class="fw-bold mb-0">Marie Horwitz</p>
+                          <p class="small text-muted">Hello, Are you there?</p>
+                        </div>
+                      </div>
+                      <div class="pt-1">
+                        <p class="small text-muted mb-1">Just now</p>
+                        <span class="badge bg-danger rounded-pill float-end">3</span>
+                      </div>
+                    </a>
+
+                    <!-- for sm screens -->
+                    <a href="./messagepage.html" class="d-flex d-md-none justify-content-between">
+                      <div class="d-flex flex-row">
+                        <div>
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                            alt="avatar" class="d-flex align-self-center me-3" width="60">
+                          <span class="badge bg-success badge-dot"></span>
+                        </div>
+                        <div class="pt-1">
+                          <p class="fw-bold mb-0">Marie Horwitz</p>
+                          <p class="small text-muted">Hello, Are you there?</p>
+                        </div>
+                      </div>
+                      <div class="pt-1">
+                        <p class="small text-muted mb-1">Just now</p>
+                        <span class="badge bg-danger rounded-pill float-end">3</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+            </div>      
+        </div>
+
+        <div class="col-lg-7 col-12 d-none d-lg-block px-4">
+                 <div class="pt-3 pe-3 position-relative colombo">
+
+                  <div class="d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div>
+                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Lorem ipsum
+                        dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua.</p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-end">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Ut enim ad minim veniam,
+                        quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div>
+                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Duis aute
+                        irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-end">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div>
+                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Sed ut
+                        perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta
+                        sunt explicabo.</p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-end">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Nemo enim ipsam
+                        voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                        qui
+                        ratione voluptatem sequi nesciunt.</p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-start">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div>
+                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Neque porro
+                        quisquam
+                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                        numquam
+                        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-end">
+                    <div>
+                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Ut enim ad minima veniam,
+                        quis
+                        nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi
+                        consequatur?</p>
+                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div>
+
+                </div>
+
+                <div class="text-muted d-flex justify-content-start align-items-center pe-3 py-2 mt-2 meno">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                    alt="avatar 3" style="width: 40px; height: 100%;">
+                  <form action="#" method="post" class="d-flex flex-row align-items-center">
+                    <div class="col-12">
+                        <input type="text" class="form-control form-control-md" id="msg" placeholder="Type message" required>
+                        <label for="msg" class="d-none"></label>
+                    </div>
+                    <div class="col-12 px-2">
+                      <a class="ms-1 text-primary" href="#!"><i class="fas fa-paperclip"></i></a>
+                      <input type="submit" class="btn btn-primary shadow btn-md ms-4" value="Send">
+                    </div>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

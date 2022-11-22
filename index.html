@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writers Palace | Welcome</title>
+    <title>Beelancing | Welcome</title>
 
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -18,9 +18,9 @@
 </head>
 <body>
     <!--Main Navigation-->
-<header>
+<header class="heada position-relative">
     <!-- Navbar -->
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-none">
+    <nav id="nava" class="navbar navbar-expand-lg navbar-light fixed-top shadow-none">
       <!-- Container wrapper -->
       <div class="container-fluid">
   
@@ -28,35 +28,26 @@
         <a class="navbar-brand" href="#">
           <img
             src="./assets/images/logo-icon.png"
-            height="25"
-            alt="MDB Logo"
+            height="35"
+            width="70"
+            alt="Beelancing Logo"
             loading="lazy"
           />
         </a>
-        <!-- Search form -->
-        <form class="d-none d-md-flex input-group w-auto my-auto">
-          <input
-            autocomplete="off"
-            type="search"
-            class="form-control rounded"
-            placeholder='Search talent, category...'
-            style="min-width: 225px;"
-          />
-          <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
-        </form>
+        
   
         <!-- Right links -->
         <ul class="navbar-nav ms-auto d-flex flex-row">
           <!-- Sign Up -->
           <li class="nav-item me-3 me-lg-0">
-            <a class="btn btn-md btn-primary" href="./signup.html">
+            <a class="btn btn-md btn-primary" href="./signup.html" target="_blank">
                 Sign Up
             </a>
           </li>
 
           <!-- Log In -->
           <li class="nav-item me-3 me-lg-0">
-            <a class="btn btn-md btn-success ms-2" href="#">
+            <a class="btn btn-md btn-success ms-2" href="./login.html" target="_blank">
                 Log In
             </a>
           </li>
@@ -65,41 +56,75 @@
       <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
+
+    <!-- banner container -->
+    <div class="container d-flex justify-content-center align-items-center align-content-center position-absolute mt-4 conta">
+      <div class="row">
+        <div class="col-12">
+          <span class="h3 fw-bold d-block text-start text-white">
+            Find the perfect talent for your business. The future of freelance is here.
+          </span>
+        </div>
+        <!-- search -->
+        <div class="col-12 mt-3">
+          <form action="#" method="post" class="position-relative d-flex flex-column flex-lg-row justify-content-start formo">
+            <div class="searcho position-relative">
+              <label for="searcho"></label>
+              <input type="search" id="searcho" class="ps-5 pe-3 my-2 my-lg-0" placeholder="Try 'academic writer needed'" required>
+              <!-- seacrh icon -->
+              <span class="sercho position-absolute">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <!-- search button -->
+            <input type="submit" class="btn btn-success btn-lg rounded-0 shadow-none bato" value="Search">
+          </form>
+        </div>
+
+        <div class="col-12 mt-5 d-none d-lg-flex align-items-center align-content-center justify-content-start contlink">
+          <span class="h5 text-start d-block me-2 text-white">Popular: </span>
+        <!-- links -->
+        <a href="#" class="btn btn-md btn-outline-white rounded-pill me-2">Website Design</a>
+        <a href="#" class="btn btn-md btn-outline-white rounded-pill me-2">Academic Writing</a>
+        <a href="#" class="btn btn-md btn-outline-white rounded-pill me-2">Logo Design</a>
+        </div>
+      </div>
+    </div>
   </header>
   <!--Main Navigation-->
 
     <!-- Main content goes here -->
-    <div class="container pt-4" style="margin-top: 58px;">
+    <div class="container pt-1">
         <!-- banner container goes here -->
         <div class="container pt-5">
             <!-- row here -->
             <div class="row">
                 <!-- first part here -->
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 p-2 px-3 mb-4 shadow border-rounded">
                     <!-- Bold header -->
                     <span class="h1 fw-bold">
-                        How writing should be done
+                        How freelancing should be done
                     </span>
 
                     <!-- pragaraph description -->
                     <span class="d-block h5 py-3">
-                        Why hustle and struggle. You can have the best writers. Right here. Right Now
+                        Why hustle and struggle. You can have the best talents. Right here. Right Now
                     </span>
 
                     <!-- Find talent and find work buttons -->
                     <div class="d-flex justify-content-start py-3">
                         <!-- find talent button -->
-                        <a href="./findtalent.html" class="btn btn-md btn-primary">Find Talent</a>
+                        <a href="./client/dashboard.html" class="btn btn-md btn-primary">Find Talent</a>
 
                         <!-- find work button -->
-                        <a href="./findwork.html" class="btn btn-md btn-success ms-2">Find Work</a>
+                        <a href="./talent/dashboard.html" class="btn btn-md btn-success ms-2">Find Work</a>
                     </div>
                 </div>
 
                 <!-- second part here -->
                 <div class="col-lg-6 col-12">
                     <!-- Talent card -->
-                    <div class="card bg-dark p-2">
+                    <div class="card card-bac p-2 mb-4">
                         <!-- Heading -->
                         <span class="h3 d-block text-start text-white py-1 mb-4">
                             We're here for you, with you. Every step of the way
@@ -129,7 +154,7 @@
         <!-- Banner content ends here -->
 
         <!-- Browse by talent category section begins here -->
-        <div class="container mt-5 mb-4 py-2">
+        <div class="container mt-5 mb-4 py-2  p-2 px-3">
           <!-- Header -->
           <span class="h2 d-block fw-bold text-start">
             Browse talent by Category
@@ -389,11 +414,93 @@
     <!-- Main content ends here -->
 
     <!-- footer content -->
-    <footer class="w-100 py-3 d-flex justify-content-center">
-      <!-- Copy -->
-     <span class="fw-bold d-block text-center h6">
-        Writer's Palace &copy 2022
-     </span>
+    <footer class="w-100 pt-3 pb-0 px-2 mb-0 d-flex flex-column">
+
+     <!-- footer section begins here -->
+     <div class="row bg-dark">
+      <!-- About column -->
+      <div class="col-lg-4 col-12">
+        <span class="h5 d-block text-start text-white">
+          About Us
+        </span>
+
+        <span class="d-block line-green my-2"></span>
+        <p class="my-3 text-white pe-3">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, perspiciatis.
+           Sint enim adipisci nobis expedita veniam sed.
+        </p>
+
+        <!-- Email -->
+        <div class="d-flex flex-column">
+          <a href="#" class="text-white d-block text-start my-2">
+            <i class="fas fa-envelope me-3"></i>
+            info@beelancing.com
+          </a>
+          <a href="#" class="text-white d-block text-start my-2">
+            <i class="fas fa-phone me-3"></i>
+            +254712345678
+          </a>
+        </div>
+
+
+      </div>
+      <!-- Quick links column -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <span class="h5 d-block text-start text-white">
+          Quick Links
+        </span>
+        <span class="d-block line-green my-2"></span>
+        <!-- links -->
+        <div class="d-flex flex-column">
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Home</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Find Talent</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Find Work</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Job Posts</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Post Job</a>
+          
+        </div>
+      </div>
+
+      <!-- Support links column -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <span class="h5 d-block text-start text-white">
+          Support
+        </span>
+        <span class="d-block line-green my-2"></span>
+        <!-- links -->
+        <div class="d-flex flex-column">
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Help</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> FAQ</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> File Dispute</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> For Talent</a>
+          <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> For Client</a>
+          
+        </div>
+      </div>
+
+      <!-- social and copy -->
+      <div class="col-12 mt-4 mb-1 d-flex justify-content-between">
+        <!-- Copy -->
+        <span class="d-block text-start text-white h6">
+          Work Place &copy 2022
+        </span>
+         <!-- socials -->
+         <div class="d-flex flex-row align-items-center my-2">
+          <a href="#" class="text-white">
+            <i class="fab fa-facebook me-3"></i>
+          </a>
+          <a href="#" class="text-white me-3">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white me-3">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white me-3">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+     </div>
     </footer>
 
     

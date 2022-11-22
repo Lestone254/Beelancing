@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beelancing | Admin - notifications</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- header container -->
+<div class="container-fluid px-2" style="margin-top: 88px;">
+    <span class="h5 d-block text-start fw-bold mb-3">Notifications</span>
+
+    <!-- Today notifications -->
+    <div class="posto p-3 mb-4">
+        <span class="h6 fw-bold d-block text-start">Today</span>
+
+        <div class="row">
+            <!-- no notifications -->
+            <div class="col-12 p-2">
+                <span class="d-block text-center">No new notifications</span>
+            </div>
+
+            <!-- notifications -->
+            <div class="col-12 p-2">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Older notifications -->
+    <div class="posto p-3 mb-4">
+        <span class="h6 fw-bold d-block text-start">Earlier</span>
+
+        <div class="row">
+            <!-- no notifications -->
+            <div class="col-12 p-2">
+                <span class="d-block text-center">No new notifications</span>
+            </div>
+
+            <!-- notifications for weekly billing report -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        Brownman,here's your
+                        <a href="#" class="text-decoration-none">weekly billing report.</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 bottom-50 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for recent sign in -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-user-circle"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        A recent sign-in to your account (1a65bdb5) from an unknown device or browser.
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-50 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for payment -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-dollar-sign"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        A payment of $20.60 has been applied to your 
+                        <a href="#" class="text-decoration-none">financial account</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for contracts -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <!-- image -->
+                    <img src="../assets/images/image-1.jpeg" alt="User name" height="24px" width="24px" class="rounded-circle mx-0">
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start fw-bold mb-2">
+                        <span class="text-uppercase">Freelancer NAme's</span> contract:
+                        <a href="#" class="text-decoration-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet.</a>
+                        started on 08-15-2022.
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for proposal from talents -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                   <i class="fas fa-rocket"></i>
+                </span>
+                <div class="d-flex flex-column me-2">
+                    <span class="d-block text-start fw-bold mb-2">
+                        <span class="text-uppercase">Freelancer NAme's</span> applied to your job
+                        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet"
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+               <div class="mx-2">
+                <a href="#" class="btn btn-outline-success btn-sm rounded-pill">view proposal</a>
+               </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+
+            <!-- notifications for Visa payment -->
+            <div class="col-12 p-2 d-flex justify-content-start position-relative w-100 border border-top-0 border-start-0 border-end-0 mb-2">
+                <span class="d-block me-3">
+                    <i class="fas fa-dollar-sign"></i>
+                </span>
+                <div class="d-flex flex-column">
+                    <span class="d-block text-start">
+                        Payment method Visa 2764 was recently added to Financial Account 
+                        <a href="#" class="text-decoration-none">Client Name</a>
+                    </span>
+                    <span class="d-block text-start">August 15</span>
+                </div>
+                <button type="button" class="position-absolute end-0 top-75 border border-0 bg-white">
+                    <i class="fas fa-multiply"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

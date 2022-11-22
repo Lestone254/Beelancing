@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writers palace | Job Posts</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- header -->
+ <header class="main-head pb-2">
+  <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
+  <!-- Container wrapper -->
+  <div class="container-fluid navbaro">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Find Work
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Find Work</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Saved Jobs</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Proposals</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Interviews</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">My Stats</a>
+            </li>
+          </ul>
+        </li>
+        
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            My Jobs
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">My Jobs</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">All Contracts</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Reports
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Overview</a>
+              <hr>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Billings & Earnings</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Transaction History</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Help
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Help and Support</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Dispute</a>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center justify-content-end">
+      <!-- Center elements -->
+      <div class="d-flex justify-content-center me-3">
+          <!-- Search form -->
+          <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+              <input
+                  autocomplete="on"
+                  type="search"
+                  class="ps-5 pe-3 inpo rounded-pill"
+                  placeholder='Search talent, category...'
+                  required
+              />
+              <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+          </form>
+   </div>
+   <!-- Center Elements -->
+
+      <!-- Icon -->
+      <a class="text-reset px-2" href="#">
+        <i class="fas fa-envelope text-white"></i>
+      </a>
+
+      <!-- Notifications -->
+      <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+          <i class="fas fa-bell text-white"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+      </a>
+
+
+      <!-- Notifications -->
+      <div class="d-none d-md-block dropdown px-2">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+  
+          <div
+            class="dropdown-menu dropdown-menu-end menon p-2"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+          
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+
+           <a href="#" class="py-3 ">more</a>
+          </div>
+  
+        </div>
+
+      
+
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="../assets/images/ableton.jpg"
+            class="rounded-circle"
+            height="25"
+            width="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+</header>
+
+<!-- header container -->
+<div class="container-fluid px-2 mt-5 pt-4">
+  <!-- container -->
+  <div class="container w-100 d-flex align-content-center justify-content-start align-items-center mb-4">
+    <div class="d-flex flex-column posto p-2 px-3 w-100 my-2">
+      <!-- Job heading -->
+      <span class="h4 d-block text-start my-4">
+        React Native Frontend, Part-time, Remote - English
+      </span>
+
+      <!-- Category -->
+      <a href="#" class="text-decoration-none d-block text-start">
+        Technology & IT
+      </a>
+      <span class="text-muted d-block text-start">
+        Posted 11 minutes ago
+      </span>
+      <hr>
+
+      <!-- description -->
+      <p class="py-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam a numquam itaque? Repudiandae at, voluptate ab quas ducimus tenetur, exercitationem voluptatum officia dicta cupiditate fugiat assumenda voluptatibus nesciunt quae repellendus ipsum possimus corporis ex eum fuga dolore debitis deserunt vitae. Cumque quae excepturi nam itaque! Tempore animi esse ad hic quae iusto debitis quibusdam voluptatem sunt aspernatur unde dolore consequatur veritatis tenetur sed, ab molestias qui inventore non totam odit suscipit porro adipisci nemo. Voluptate sunt ipsum temporibus nesciunt, voluptatibus dolores optio nam rerum accusantium consequatur culpa id aut odit reprehenderit explicabo qui enim veritatis vel modi facilis!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facilis voluptatibus adipisci! Sequi velit labore possimus ipsum, nisi sunt, corrupti unde totam quis dignissimos qui voluptate ipsa aspernatur. Quis laboriosam molestiae magnam nesciunt ex fuga neque veritatis sequi a sunt officia eius esse totam voluptas, recusandae maiores maxime id. Consectetur atque vel soluta, repellendus amet harum culpa esse perspiciatis vero voluptatibus iusto, vitae incidunt excepturi necessitatibus laboriosam distinctio aspernatur corporis error delectus! Sit quis nihil eos neque repudiandae provident accusamus quos eveniet ea at, sint vero incidunt excepturi quo magni qui. Exercitationem rem praesentium error ea modi maxime magni culpa.
+        Lorem ipsum dolor sit amet.
+      </p>
+      <hr>
+
+      <div class="d-flex flex-row">
+
+        <!-- clock -->
+        <span class="d-flex flex-row text-start me-3">
+            <span class="d-block">
+                <i class="fas fa-clock me-2"></i>
+            </span>
+           <span class="d-flex flex-column">
+            <span class="fw-bold d-block">
+                Less than 30hr/week
+            </span>
+            <span class="text-muted d-block">
+                Hourly
+            </span>
+           </span>
+        </span>
+
+        <!-- Project length -->
+        <span class="d-flex flex-row text-start me-3">
+            <span class="d-block">
+                <i class="fa-solid fa-calendar-days me-3"></i>
+            </span>
+           <span class="d-flex flex-column">
+            <span class="fw-bold d-block">
+                3 to 6 months
+            </span>
+            <span class="text-muted d-block">
+                Project Length
+            </span>
+           </span>
+        </span>
+
+        <!-- Experience level -->
+        <span class="d-flex flex-row text-start me-3">
+            <span class="d-block">
+                <i class="fa-solid fa-head-side-virus me-3"></i>
+            </span>
+           <span class="d-flex flex-column">
+            <span class="fw-bold d-block">
+                Intermediate
+            </span>
+            <span class="text-muted d-block">
+                Experience level
+            </span>
+           </span>
+        </span>
+
+        <!-- Hourly Rate -->
+        <span class="d-flex justify-content-around text-start me-3">
+            <span class="d-block">
+                <i class="fa-solid fa-stopwatch me-3"></i>
+            </span>
+           <span class="d-flex flex-column">
+            <span class="fw-bold d-block">
+                Intermediate
+            </span>
+            <span class="text-muted d-block">
+                Hourly
+            </span>
+           </span>
+        </span>
+
+
+      </div>
+      <hr>
+
+      <span class="d-block text-start">
+        <span class="fw-bold">Project Type:</span> Complex project
+      </span>
+      <hr>
+
+      <div class="d-flex flex-column py-">
+        <span class="d-block h6 fw-bold text-start">
+            Skills and Expertise
+        </span>
+
+        <p class="py-2">
+            <span class="badge badge-danger text-muted p-3 fw-bold">Web</span>
+            <span class="badge badge-danger text-muted p-3 fw-bold">UI</span>
+        </p>
+      </div>
+      <hr>
+
+      <div class="d-flex flex-column py-2">
+        <span class="d-block h6 fw-bold text-start">
+            Activity on this job
+        </span>
+
+        <span class="d-block text-start my-2">
+            Proposals: Less than 5
+        </span>
+        <span class="d-block text-start my-2">
+            Interviewing: 0
+        </span>
+        <span class="d-block text-start my-2">
+            Invite sent: 0
+        </span>
+        <span class="d-block text-start my-2">
+            Unanswered invites: 0
+        </span>
+      </div>
+      <hr>
+
+      <!-- buttons -->
+      <div class="d-flex flex-column flex-md-row">
+        <a href="#" class="btn btn-success w-50 w-lg-25 my-2 me-2">Apply Now</a>
+        <a href="#" class="btn btn-outline-success w-50 w-lg-25 my-2 me-2"><i class="far fa-heart me-1"></i> Save Job</a>
+      </div>
+
+      <span class="d-block text-start tex-success my-3">
+        <i class="fas fa-flag text-success me-2"></i>
+        <a href="#" class="text-decoration-none text-success">Flag as inappropriate</a>
+      </span>
+      <hr>
+
+      <div class="d-flex flex-column py-2">
+        <span class="h5 text-start d-block fw-bold">About Client</span>
+        <div class="text-start">
+          <!-- starts -->
+          <span style="color: gold; font-size: 13px;">
+            <i class="fas fa-star"></i>
+        </span>
+        <!-- starts -->
+        <span style="color: gold; font-size: 13px;">
+            <i class="fas fa-star"></i>
+        </span>
+        <!-- starts -->
+        <span style="color: gold; font-size: 13px;">
+            <i class="fas fa-star"></i>
+        </span>
+        <!-- starts -->
+        <span style="color: gold; font-size: 13px;">
+            <i class="fas fa-star"></i>
+        </span>
+        <!-- starts -->
+        <span style="color: gold; font-size: 13px;">
+            <i class="fas fa-star"></i>
+        </span>
+        </div>
+           <!-- Hire Rate -->
+           <span class="d-block my-1 text-start category">
+            <span class="fw-bold">
+              Hire Rate:
+            </span>
+             75%(3/4)
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

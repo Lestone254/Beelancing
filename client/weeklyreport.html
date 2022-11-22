@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writers palace | Weekly Report</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+ 
+<!-- header -->
+<header class="main-head pb-2">
+  <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
+  <!-- Container wrapper -->
+  <div class="container-fluid navbaro">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Jobs
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">My Jobs</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">All Job Posts</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">All Contracts</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Post a Job</a>
+            </li>
+          </ul>
+        </li>
+        
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Talent
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Discover</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Your Hires</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Recently Viewed</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Saved Talent</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Reports
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
+              <a class="dropdown-item" href="#">Weekly Summary</a>
+              <hr>
+            </li>
+            <li class="pb-2">
+              <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
+              <a class="dropdown-item" href="#">Transaction History</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Budgets</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Help
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Help and Support</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Community and Forums</a>
+            </li>
+            <li class="pb-2">
+              <a class="dropdown-item" href="#">Dispute</a>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center justify-content-end">
+      <!-- Center elements -->
+      <div class="d-flex justify-content-center me-3">
+          <!-- Search form -->
+          <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+              <input
+                  autocomplete="on"
+                  type="search"
+                  class="ps-5 pe-3 inpo rounded-pill"
+                  placeholder='Search talent, category...'
+                  required
+              />
+              <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+          </form>
+   </div>
+   <!-- Center Elements -->
+
+      <!-- Icon -->
+      <a class="text-reset px-2" href="#">
+        <i class="fas fa-envelope text-white"></i>
+      </a>
+
+      <!-- Notifications -->
+      <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+          <i class="fas fa-bell text-white"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+      </a>
+
+
+      <!-- Notifications -->
+      <div class="d-none d-md-block dropdown px-2">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+  
+          <div
+            class="dropdown-menu dropdown-menu-end menon p-2"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+          
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+
+           <a href="#" class="py-3 ">more</a>
+          </div>
+  
+        </div>
+
+      
+
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="../assets/images/ableton.jpg"
+            class="rounded-circle"
+            height="25"
+            width="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+</header>
+
+<!-- header container -->
+<div class="container-fluid px-2" style="margin-top: 88px;">
+    <div class="posto mt-3 px-3 py-3">
+        <span class="h5 d-block text-start">Weekly Summary</span>
+
+        <!-- calender -->
+        <form action="#" method="post">
+            <label for="calender"></label>
+            <input type="date" id="calender" required>
+
+            <!-- time caption -->
+            <span class="d-block text-start text-secondary mt-3"><i class="fas fa-info-circle"></i> Times based on UTC</span>
+        </form>
+
+        <div class="row py-3">
+            <!-- Totals -->
+            <div class="col-lg-4 col-12 py-1">
+                <div class="container py-3 rounded-3 border border-secondary">
+                    <span class="h6 d-block text-start fw-bold">Totals</span>
+
+                <div class="d-flex justify-content-between py-1">
+                    <span class="d-block text-start">Hourly</span>
+                    <span class="d-block text-end fw-bold">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between py-1">
+                    <span class="d-block text-start">Manual Time</span>
+                    <span class="d-block text-end fw-bold">$0.00</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between py-1">
+                    <span class="d-block text-start">Fixed price</span>
+                    <span class="d-block text-end fw-bold">$20.00</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end py-1">
+                    <span class="d-block text-end fw-bold">$20.00</span>
+                </div>
+                </div>
+            </div>
+
+            <!-- Top 5 contracts -->
+            <div class="col-lg-4 col-4 py-1">
+                <div class="container py-3 rounded-3 border border-secondary">
+                    <span class="h6 d-block text-start fw-bold">Top 5 contracts</span>
+
+                    <!-- contract -->
+                    <div class="my-2">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <!-- project name -->
+                          <span class="text-start">React js developer to co...</span>
+                          <span class="text-start fw-bold">$20.00</span>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- Top 5 activities -->
+            <div class="col-lg-4 col-4 py-1">
+                <div class="container py-3 rounded-3 border border-secondary">
+                    <span class="h6 d-block text-start fw-bold">Top 5 activities</span>
+
+                    <!-- activity -->
+                    <div class="my-2">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <!-- project name -->
+                          <span class="text-start">React js developer to co...</span>
+                          <span class="text-start fw-bold">$20.00</span>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-12 px-0 mb-2">
+                <span class="h6 d-block text-start fw-bold">Hourly</span>
+            </div>
+
+            <!-- Hourly -->
+            <div class="col-12 py-3 rounded-3 border border-secondary">
+                <span class="d-block text-center text-secondary fw-bold">There is no data for the selected week.</span>
+            </div>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-12 d-flex justify-content-between px-0 mb-2">
+                <span class="h6 d-block text-start fw-bold">Fixed price payments</span>
+                <a href="#" class="text-decoration-none fw-bold"><i class="fas fa-file"></i> Export as CSV</a>
+            </div>
+
+            <div class="container-fluid py-3 rounded-3 border border-secondary">
+                <table class="table align-middle mb-0 bg-white">
+                    <thead class="bg-white">
+                      <tr>
+                        <th class="fw-bold">Contract</th>
+                        <th class="fw-bold">Date</th>
+                        <th class="fw-bold">Type</th>
+                        <th class="fw-bold">Charge</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                alt=""
+                                style="width: 45px; height: 45px"
+                                class="rounded-circle d-none d-lg-inline"
+                                />
+                            <div class="ms-3">
+                                <p class="text-primary mb-0">job title job title...</p>
+                              <p class="fw-bold mb-1">John Doe</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="fw-normal mb-1">8/8</p>
+                        </td>
+                        <td>
+                          <span class="d-block">Fixed Price Payment</span>
+                        </td>
+                        <td>$20.00</td>
+                      </tr>
+
+                      <!-- Total -->
+                      <tr>
+                        <td>
+                            <p class="fw-bold mb-1">Total</p>
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                            <span class="d-block fw-bold">$20.00</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+
+    </div>
+  
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

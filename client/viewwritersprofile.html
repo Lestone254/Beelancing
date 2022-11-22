@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beelancing | View Talent Profile</title>
+  
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../assets/css/mdb.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+  
+    <!-- style css link -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+<body>
+    <!--Main Navigation-->
+    <header class="main-head pb-2">
+      <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
+      <!-- Container wrapper -->
+      <div class="container-fluid navbaro">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+              height="15"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Jobs
+                <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">My Jobs</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">All Job Posts</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">All Contracts</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Post a Job</a>
+                </li>
+              </ul>
+            </li>
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Talent
+                <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Discover</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Your Hires</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Recently Viewed</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Saved Talent</a>
+                </li>
+              </ul>
+            </li>
+    
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reports
+                <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="pb-2">
+                  <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
+                  <a class="dropdown-item" href="#">Weekly Summary</a>
+                  <hr>
+                </li>
+                <li class="pb-2">
+                  <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
+                  <a class="dropdown-item" href="#">Transaction History</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Budgets</a>
+                </li>
+              </ul>
+            </li>
+    
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Help
+                <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Help and Support</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Community and Forums</a>
+                </li>
+                <li class="pb-2">
+                  <a class="dropdown-item" href="#">Dispute</a>
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    
+        <!-- Right elements -->
+        <div class="d-flex align-items-center justify-content-end">
+          <!-- Center elements -->
+          <div class="d-flex justify-content-center me-3">
+              <!-- Search form -->
+              <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+                  <input
+                      autocomplete="on"
+                      type="search"
+                      class="ps-5 pe-3 inpo rounded-pill"
+                      placeholder='Search talent, category...'
+                      required
+                  />
+                  <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+              </form>
+       </div>
+       <!-- Center Elements -->
+    
+          <!-- Icon -->
+          <a class="text-reset px-2" href="#">
+            <i class="fas fa-envelope text-white"></i>
+          </a>
+    
+          <!-- Notifications -->
+          <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+              <i class="fas fa-bell text-white"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+    
+    
+          <!-- Notifications -->
+          <div class="d-none d-md-block dropdown px-2">
+              <a
+                class="text-reset me-3 dropdown-toggle hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-bell text-white"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+      
+              <div
+                class="dropdown-menu dropdown-menu-end menon p-2"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+              
+               <!-- item -->
+               <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                  Some notification title goes here
+                  <hr>
+               </a>
+               <!-- item -->
+               <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+                  Some notification title goes here
+                  <hr>
+               </a>
+    
+               <a href="#" class="py-3 ">more</a>
+              </div>
+      
+            </div>
+    
+          
+    
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../assets/images/ableton.jpg"
+                class="rounded-circle"
+                height="25"
+                width="25"
+                alt="Black and White Portrait of a Man"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    </header>
+  <!--Main Navigation-->
+  
+    <!-- Main content goes here -->
+    <div class="container-fluid pt-4" style="margin-top: 58px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-12 card">
+              <!-- profile image -->
+              <div class="d-flex flex-column justify-content-center align-items-center my-2">
+                <img src="../assets/images/pimg4.jpg" alt="Full Name" height="75px" width="75px" class="rounded-circle d-block mb-1">
+                <span class="d-block text-center h5">Full Name</span>
+                <!-- rating -->
+            <div class="text-start">
+              <!-- starts -->
+              <span class="">
+                  <i class="far fa-star"></i>
+              </span>
+              <!-- starts -->
+              <span class="">
+                  <i class="far fa-star"></i>
+              </span>
+              <!-- starts -->
+              <span class="">
+                  <i class="far fa-star"></i>
+              </span>
+              <!-- starts -->
+              <span class="">
+                  <i class="far fa-star"></i>
+              </span>
+              <!-- starts -->
+              <span class="">
+                  <i class="far fa-star"></i>
+              </span>
+
+          </div>
+                <!-- category -->
+                <span class="d-block text-center">Web development</span>
+                
+              </div>
+  
+              <!-- description -->
+              <p class="py-1 d-none d-md-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cumque autem quam provident
+                 alias obcaecati. Quas, cumque ducimus quam eos totam numquam praesentium aut obcaecati ab? Error, accusantium.
+              </p>
+              <div class="accordion d-block d-md-none" id="accordionExample2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      <span class="d-block text-start">
+                        <i class="fas fa-ticket me-1"></i>
+                        Description
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-mdb-parent="#accordionExample2">
+                    <div class="accordion-body px-2">
+                      <p class="py-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cumque autem quam provident
+                         alias obcaecati. Quas, cumque ducimus quam eos totam numquam praesentium aut obcaecati ab? Error, accusantium.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Skills -->
+              <div class="d-none d-md-block">
+                <span class="d-block text-start fw-bold h5">Skills</span>
+                <div class="my-1 py-2">
+                  <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                  <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                  <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                  <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                  <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                </div>
+              </div>
+              <div class="accordion d-block d-md-none" id="accordionExample3">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#collapseThree"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      <span class="d-block text-start">
+                        <i class="far fa-star me-1"></i>
+                        Skill
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-mdb-parent="#accordionExample3">
+                    <div class="accordion-body px-2">
+                      <div class="my-1 py-2">
+                        <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                        <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                        <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                        <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                        <span class="badge badge-success text-primary p-3 me-2">Skill</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-7 col-12 px-2">
+              <div class="card px-2 mb-3">
+                <span class="d-block fw-bold h6 text-start py-3">Basic Information</span>
+                <div class="row">
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Name</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>Full Name</small>
+                    </span>
+                  </div>
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Job Success Rate</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>75% (3/4)</small>
+                    </span>
+                  </div>
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Earnings ($)</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>50k +</small>
+                    </span>
+                  </div>
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Hourly Rate ($)</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>500</small>
+                    </span>
+                  </div>
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Country</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>Kenya</small>
+                    </span>
+                  </div>
+                  <div class="col-lg-4 col-6 d-flex flex-column mb-3">
+                    <span class="text-muted pt-2 text-uppercase"><small>Experience</small></span>
+                    <span class="d-block text-start fw-bold">
+                      <small>Entry</small>
+                    </span>
+                  </div>
+                  <div class="col-12 my-3">
+                    <button class="btn btn-primary btn-sm py-2 rounded-0"><i class="fas fa-download me-1"></i> Download Resume</button>
+                    <a href="#" class="btn btn-outline-dark text-primary btn-sm py-2 rounded-0"><i class="far fa-envelope me-1"></i> Message</a>
+                    <a href="#" class="btn btn-success btn-sm py-2 rounded-0"><i class="fas fa-pen me-1"></i> Hire</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card px-2 mb-3">
+                <span class="d-block fw-bold h6 text-start py-3">Experience</span>
+                <div class="row py-3">
+                  <!-- item -->
+                  <div class="col-12">
+                    <div class="d-flex flex-row align-items-center">
+                    <span class="badge badge-success text-primary p-4 rounded-circle text-uppercase me-3">ST</span>
+                    <div class="d-flex flex-column">
+                      <!-- company -->
+                      <span class="d-block text-start fw-bold"><small>Firm</small></span>
+                      <!-- Role -->
+                      <span class="d-block text-start fw-bold"><small>UI/UX designer</small></span>
+                      <!-- Period -->
+                      <span class="d-block text-start fw-bold mb-2"><small>April 2018 - July 2022</small></span>
+      
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rating -->
+              <div class="col-12 my-5 card">
+                <span class="text-center h6 d-block mt-3">Reviews(2)</span>
+            <div class="d-flex justify-content-center mb-3">
+                <span class="mb-2 d-block" style="background-color:rgb(92, 92, 92); width: 120px; height: 1.3px;"></span>
+            </div>
+            <!-- row container for the reviews and form review -->
+        <div class="row py-2">
+            <!-- col for reviews -->
+            <div class="col-lg-6 col-12">
+                <!-- Review -->
+                <div class="card bg-dark mb-2">
+                    <!-- image -->
+                    <span class="d-block text-center d-flex justify-content-center align-items-center pt-3 pb-2">
+                        <img src="../assets/images/pimg4.jpg" alt="User Name" width="60px" height="60px" class="rounded-circle">
+                    </span>
+
+                    <!-- username -->
+                    <span class="d-block text-center" style="color:rgb(168, 168, 168)">
+                        User Name
+                    </span>
+
+                    <!-- rating -->
+                    <div class="text-center">
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+
+                    <!-- review text -->
+                    <p class="card-text text-start text-white p-2">
+                        <!-- ICON -->
+                        <i class="fas fa-quote-left"></i>
+
+                        <!-- text -->
+                        <span style="font-size: 14px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ducimus optio at quas tempore eius.
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Review -->
+                <div class="card bg-dark mb-2">
+                    <!-- image -->
+                    <span class="d-block text-center d-flex justify-content-center align-items-center pt-3 pb-2">
+                        <img src="../assets/images/pimg4.jpg" alt="User Name" width="60px" height="60px" class="rounded-circle">
+                    </span>
+
+                    <!-- username -->
+                    <span class="d-block text-center">
+                        User Name
+                    </span>
+
+                    <!-- rating -->
+                    <div class="text-center">
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <!-- starts -->
+                        <span style="color: gold; font-size: 13px;">
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+
+                    <!-- review text -->
+                    <p class="card-text text-start text-white p-2">
+                        <!-- ICON -->
+                        <i class="fas fa-quote-left"></i>
+
+                        <!-- text -->
+                        <span style="font-size: 14px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ducimus optio at quas tempore eius.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post Review -->
+            <div class="col-lg-6 col-12">
+                <!-- heading -->
+                <span class="text-center d-block p-0 m-0 pb-2" style="font-size: 14px; font-weight: 400;">
+                    Rate writer
+                </span>
+
+                <!-- rating -->
+                <div class="text-center pb-2">
+                    <!-- starts -->
+                    <span style="font-size: 13px" onmouseover="this.style.color='gold'">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <!-- starts -->
+                    <span style="font-size: 13px;" onmouseover="this.style.color='gold'">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <!-- starts -->
+                    <span style="font-size: 13px;" onmouseover="this.style.color='gold'">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <!-- starts -->
+                    <span style="font-size: 13px;" onmouseover="this.style.color='gold'">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <!-- starts -->
+                    <span style="font-size: 13px;" onmouseover="this.style.color='gold'">
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+
+                <!-- form begins here -->
+                <form action="#" method="post">
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" class="form-control" id="formExample1">
+                        <label for="formExample1" class="form-label">Name</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" class="form-control" id="formExample1">
+                        <label for="formExample1" class="form-label">E-mail</label>
+                    </div>
+
+                    <!-- Review input -->
+                    <div class="form-outline mb-4">
+                        <textarea name="form4Example3" id="form4Example3" rows="4" class="form-control"></textarea>
+                        <label for="form4Example3" class="form-label">Review</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button class="btn btn-success btn-block mb-4" type="submit">Submit</button>
+                </form>
+                <!-- form ends here -->
+            </div>
+        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <!-- Main content ends here -->
+
+
+    
+
+     <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

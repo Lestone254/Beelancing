@@ -17,8 +17,10 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+  <!-- header -->
+ <header class="main-head pb-2">
   <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-2 shadow-none">
+<nav class="navbar fixed-top navbar-expand-lg px-2 shadow-none">
   <!-- Container wrapper -->
   <div class="container-fluid navbaro">
     <!-- Toggle button -->
@@ -46,11 +48,11 @@
         />
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-flex justify-content-around">
         <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             id="navbarDropdownMenuLink"
             role="button"
@@ -58,25 +60,20 @@
             aria-expanded="false"
           >
             Jobs
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">My Jobs</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">All Job Posts</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">All Contracts</a>
             </li>
-            <li>
-              <a class="dropdown-item" href="#">Bring Your own Talent</a>
-            </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Post a Job</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Any Hire</a>
             </li>
           </ul>
         </li>
@@ -84,7 +81,7 @@
         <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             id="navbarDropdownMenuLink"
             role="button"
@@ -92,21 +89,19 @@
             aria-expanded="false"
           >
             Talent
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Discover</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Your Hires</a>
             </li>
-            <li>
-              <a class="dropdown-item" href="#">BYO Talent</a>
-            </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Recently Viewed</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Saved Talent</a>
             </li>
           </ul>
@@ -115,7 +110,7 @@
         <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             id="navbarDropdownMenuLink"
             role="button"
@@ -123,36 +118,20 @@
             aria-expanded="false"
           >
             Reports
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li>
+            <li class="pb-2">
               <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
               <a class="dropdown-item" href="#">Weekly Summary</a>
               <hr>
             </li>
-            <li>
+            <li class="pb-2">
               <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
               <a class="dropdown-item" href="#">Transaction History</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Budgets</a>
-              <hr>
-            </li>
-            <li>
-              <span class="ps-1 h6 d-block text-start text-secondary">Freelancer Activity</span>
-              <a class="dropdown-item" href="#">Timesheet</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Time by Activity</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Time by Freelancer</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">All Work Diaries</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Custom Export</a>
             </li>
           </ul>
         </li>
@@ -160,7 +139,7 @@
         <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             href="#"
             id="navbarDropdownMenuLink"
             role="button"
@@ -168,15 +147,16 @@
             aria-expanded="false"
           >
             Help
+            <span class="px-2 dropli"><i class="fas fa-angle-down"></i></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Help and Support</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Community and Forums</a>
             </li>
-            <li>
+            <li class="pb-2">
               <a class="dropdown-item" href="#">Dispute</a>
             </li>
           </ul>
@@ -187,58 +167,73 @@
     </div>
     <!-- Collapsible wrapper -->
 
-    <!-- Center elements -->
-    <div class="d-flex justify-content-center">
-      <form class="d-flex input-group bg-light">
-        <input
-          type="search"
-          class="form-control rounded"
-          placeholder="Search talent or project..."
-          aria-label="Search"
-          aria-describedby="search-addon"
-        />
-        <span class="input-group-text border-0 bg-light" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span>
-      </form>
-    </div>
-    <!-- Center Elements -->
-
     <!-- Right elements -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-end">
+      <!-- Center elements -->
+      <div class="d-flex justify-content-center me-3">
+          <!-- Search form -->
+          <form class="d-none d-md-flex input-group w-auto my-auto nav-search">
+              <input
+                  autocomplete="on"
+                  type="search"
+                  class="ps-5 pe-3 inpo rounded-pill"
+                  placeholder='Search talent, category...'
+                  required
+              />
+              <span class="position-absolute border-0"><i class="fas fa-search"></i></span>
+          </form>
+   </div>
+   <!-- Center Elements -->
+
       <!-- Icon -->
-      <a class="text-reset me-3" href="#">
-        <i class="fas fa-envelope"></i>
+      <a class="text-reset px-2" href="#">
+        <i class="fas fa-envelope text-white"></i>
       </a>
 
       <!-- Notifications -->
-      <div class="dropdown">
-        <a
-          class="text-reset me-3 dropdown-toggle hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fas fa-bell"></i>
+      <a class="d-block d-md-none text-reset px-2 me-3" href="#">
+          <i class="fas fa-bell text-white"></i>
           <span class="badge rounded-pill badge-notification bg-danger">1</span>
-        </a>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <li>
-            <a class="dropdown-item" href="#">Some news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Another news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </li>
-        </ul>
-      </div>
+      </a>
+
+
+      <!-- Notifications -->
+      <div class="d-none d-md-block dropdown px-2">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+  
+          <div
+            class="dropdown-menu dropdown-menu-end menon p-2"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+          
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+           <!-- item -->
+           <a href="#" class="pb-3 pt-2 text-decoration-none text-dark d-block">
+              Some notification title goes here
+              <hr>
+           </a>
+
+           <a href="#" class="py-3 ">more</a>
+          </div>
+  
+        </div>
+
+      
+
       <!-- Avatar -->
       <div class="dropdown">
         <a
@@ -250,9 +245,10 @@
           aria-expanded="false"
         >
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            src="../assets/images/ableton.jpg"
             class="rounded-circle"
             height="25"
+            width="25"
             alt="Black and White Portrait of a Man"
             loading="lazy"
           />
@@ -262,13 +258,13 @@
           aria-labelledby="navbarDropdownMenuAvatar"
         >
           <li>
-            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-user me-3"></i> My profile</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-cog me-3"></i>Settings</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out me-3"></i>Logout</a>
           </li>
         </ul>
       </div>
@@ -278,6 +274,7 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+</header>
 
 <!-- header container -->
 <div class="container-fluid px-2">
@@ -295,16 +292,16 @@
     <!-- column -->
     <div class="col-12">
       <!-- Your Postings -->
-      <div class="container-fluid py-4 mb-5 posto">
+      <div class="container-fluid py-4 mb-5 posto shadow">
         <div class="d-flex justify-content-between mb-5">
           <span class="h5 d-block text-start">Your Postings</span>
-        <a href="#" class="text-decoration-none">View all postings</a>
+        <a href="./jobpostings.html" class="text-decoration-none text-success">View all postings</a>
         </div>
         
         <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active"
+              class="nav-link taba fw-bold active"
               id="home-tab0"
               data-mdb-toggle="tab"
               data-mdb-target="#home0"
@@ -318,7 +315,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link"
+              class="nav-link taba fw-bold"
               id="profile-tab0"
               data-mdb-toggle="tab"
               data-mdb-target="#profile0"
@@ -331,6 +328,7 @@
             </button>
           </li>
         </ul>
+
         <div class="tab-content" id="myTabContent0">
           <div
             class="tab-pane fade show active"
@@ -365,8 +363,8 @@
                   <i class="fas fa-ellipsis"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button class="dropdown-item" type="button">Reuse posting</button></li>
-                  <li><button class="dropdown-item" type="button">View Post</button></li>
+                  <li><button class="dropdown-item" type="button"><i class="fas fa-retweet me-2"></i> Reuse posting</button></li>
+                  <li><button class="dropdown-item" type="button"><i class="fas fa-eye me-2"></i> View Post</button></li>
                 </ul>
               </div>
               </div>
@@ -385,7 +383,7 @@
                 <!-- Proposals -->
                 <div class="col-lg-2 col-12 text-secondary">
                   <span class="text-success">34</span>
-                  <span class="text-info">(22 new)</span>
+                  <span class="text-primary">(22 new)</span>
                   proposals
                 </div>
 
@@ -409,10 +407,10 @@
       </div>
 
       <!-- Your contracts -->
-      <div class="container-fluid py-4 mb-5 posto">
+      <div class="container-fluid py-4 mb-5 posto shadow">
         <div class="d-flex justify-content-between mb-2">
           <span class="h5 d-block text-start">Your Contracts</span>
-        <a href="#" class="text-decoration-none">See all contracts</a>
+        <a href="./allcontracts.html" class="text-decoration-none text-success">See all contracts</a>
         </div>
         <!-- money spent this week -->
         <span class="h4 d-block text-start text-primary mb-4">
@@ -433,7 +431,7 @@
         <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active"
+              class="nav-link taba fw-bold active"
               id="home-tab0"
               data-mdb-toggle="tab"
               data-mdb-target="#home1"
@@ -447,7 +445,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link"
+              class="nav-link taba fw-bold"
               id="profile-tab0"
               data-mdb-toggle="tab"
               data-mdb-target="#profile1"
@@ -474,9 +472,9 @@
             </div>
 
             <span class="h5 d-block text-center">
-              No active job posts
+              No active contracts
             </span>
-            <p class="text-center">Post a job to the marketplace and let talent come to you.</p>
+            <p class="text-center">Post a job to the marketplace and let talent come to you for contract hire.</p>
 
             <!-- post a job button -->
             <div class="d-flex justify-content-center align-items-center">
@@ -497,13 +495,12 @@
                     <i class="fas fa-ellipsis"></i>
                   </button>
                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><a href="#" class="dropdown-item">View milestones & payments</a></li>
-                    <li><a href="#" class="dropdown-item">Send a message</a></li>
-                    <li><hr><a href="#" class="dropdown-item">View terms & settings</a><hr></li>
-                    <li><a href="#" class="dropdown-item">Give feedback</a></li>
-                    <li><a href="#" class="dropdown-item">Move outside palace</a></li>
-                    <li><a href="#" class="dropdown-item">End contract</a><hr></li>
-                    <li><a href="#" class="dropdown-item">View profile</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="fas fa-star me-2"></i> View milestones & payments</a></li>
+                    <li><a href="./messagepage.html" class="dropdown-item"><i class="fas fa-envelope me-2"></i> Send a message</a></li>
+                    <li><hr><a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> View terms & settings</a><hr></li>
+                    <li><a href="./givefeedback.html" class="dropdown-item"><i class="fas fa-comment me-2"></i> Give feedback</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="fas fa-thumbs-up me-2"></i> End contract</a><hr></li>
+                    <li><a href="./viewwritersprofile.html" class="dropdown-item"><i class="fas fa-user me-2"></i> View profile</a></li>
                   </ul>
                 </div>
                 </div>
@@ -667,6 +664,95 @@
   </div>
 </div>
 <!-- header container -->
+<!-- footer content -->
+<footer class="w-100 pt-3 pb-0 px-2 mb-0 d-flex flex-column">
+
+  <!-- footer section begins here -->
+  <div class="row bg-dark">
+   <!-- About column -->
+   <div class="col-lg-4 col-12">
+     <span class="h5 d-block text-start text-white">
+       About Us
+     </span>
+
+     <span class="d-block line-green my-2"></span>
+     <p class="my-3 text-white pe-3">
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, perspiciatis.
+        Sint enim adipisci nobis expedita veniam sed.
+     </p>
+
+     <!-- Email -->
+     <div class="d-flex flex-column">
+       <a href="#" class="text-white d-block text-start my-2">
+         <i class="fas fa-envelope me-3"></i>
+         beelancing@gmail.com
+       </a>
+       <a href="#" class="text-white d-block text-start my-2">
+         <i class="fas fa-phone me-3"></i>
+         +254712345678
+       </a>
+     </div>
+
+
+   </div>
+   <!-- Quick links column -->
+   <div class="col-lg-4 col-md-6 col-12">
+     <span class="h5 d-block text-start text-white">
+       Quick Links
+     </span>
+     <span class="d-block line-green my-2"></span>
+     <!-- links -->
+     <div class="d-flex flex-column">
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Home</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Find Talent</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Find Work</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Job Posts</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Post Job</a>
+       
+     </div>
+   </div>
+
+   <!-- Support links column -->
+   <div class="col-lg-4 col-md-6 col-12">
+     <span class="h5 d-block text-start text-white">
+       Support
+     </span>
+     <span class="d-block line-green my-2"></span>
+     <!-- links -->
+     <div class="d-flex flex-column">
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> Help</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> FAQ</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> File Dispute</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> For Talent</a>
+       <a href="#" class="py-2 text-white d-block text-start links"><i class="fas fa-angle-right me-1"></i> For Client</a>
+       
+     </div>
+   </div>
+
+   <!-- social and copy -->
+   <div class="col-12 mt-4 mb-1 d-flex justify-content-between">
+     <!-- Copy -->
+     <span class="d-block text-start text-white h6">
+       Work Place &copy 2022
+     </span>
+      <!-- socials -->
+      <div class="d-flex flex-row align-items-center my-2">
+       <a href="#" class="text-white">
+         <i class="fab fa-facebook me-3"></i>
+       </a>
+       <a href="#" class="text-white me-3">
+         <i class="fab fa-instagram"></i>
+       </a>
+       <a href="#" class="text-white me-3">
+         <i class="fab fa-twitter"></i>
+       </a>
+       <a href="#" class="text-white me-3">
+         <i class="fab fa-linkedin"></i>
+       </a>
+     </div>
+   </div>
+  </div>
+ </footer>
 
   <!-- jquery js link -->
   <script src="../assets/js/jquery.js"></script>

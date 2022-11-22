@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writers palace | Dashboard</title>
+
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="../assets/css/mdb.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="../assets/css/all.css">
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-2 shadow-none">
+  <!-- Container wrapper -->
+  <div class="container-fluid navbaro">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Jobs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">My Jobs</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">All Job Posts</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">All Contracts</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Bring Your own Talent</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Post a Job</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Any Hire</a>
+            </li>
+          </ul>
+        </li>
+        
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Talent
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Discover</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Your Hires</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">BYO Talent</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Recently Viewed</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Saved Talent</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Reports
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <span class="h6 d-block ps-1 text-secondary text-start">Account Overview</span>
+              <a class="dropdown-item" href="#">Weekly Summary</a>
+              <hr>
+            </li>
+            <li>
+              <span class="ps-1 h6 d-block text-start text-secondary">Finacials</span>
+              <a class="dropdown-item" href="#">Transaction History</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Budgets</a>
+              <hr>
+            </li>
+            <li>
+              <span class="ps-1 h6 d-block text-start text-secondary">Freelancer Activity</span>
+              <a class="dropdown-item" href="#">Timesheet</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Time by Activity</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Time by Freelancer</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">All Work Diaries</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Custom Export</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Help
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Help and Support</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Community and Forums</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Dispute</a>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Center elements -->
+    <div class="d-flex justify-content-center">
+      <form class="d-flex input-group bg-light">
+        <input
+          type="search"
+          class="form-control rounded"
+          placeholder="Search talent or project..."
+          aria-label="Search"
+          aria-describedby="search-addon"
+        />
+        <span class="input-group-text border-0 bg-light" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </form>
+    </div>
+    <!-- Center Elements -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<!-- header container -->
+<div class="container-fluid px-2">
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-content-center align-items-center">
+    <span class="h4 d-block text-start fw-bold mt-4">Your Dashboard</span>
+    <div>
+      <a href="#" class="btn btn-success btn-md">Post Job</a>
+    </div>
+  </div>
+  <span class="h5 d-block text-start mb-4">User Name</span>
+
+  <!-- Row container -->
+  <div class="row">
+    <!-- column -->
+    <div class="col-12">
+      <!-- Your Postings -->
+      <div class="container-fluid py-4 mb-5 posto">
+        <div class="d-flex justify-content-between mb-5">
+          <span class="h5 d-block text-start">Your Postings</span>
+        <a href="#" class="text-decoration-none">View all postings</a>
+        </div>
+        
+        <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab0"
+              data-mdb-toggle="tab"
+              data-mdb-target="#home0"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Active (0)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab0"
+              data-mdb-toggle="tab"
+              data-mdb-target="#profile0"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Recently filled
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent0">
+          <div
+            class="tab-pane fade show active"
+            id="home0"
+            role="tabpanel"
+            aria-labelledby="home-tab0"
+          >
+
+            <!-- Folder image -->
+            <div class="d-flex justify-content-center my-4">
+              <img src="../assets/images/folder2.png" alt="Folder image" height="90px" width="105px">
+            </div>
+
+            <span class="h5 d-block text-center">
+              No active job posts
+            </span>
+            <p class="text-center">Post a job to the marketplace and let talent come to you.</p>
+
+            <!-- post a job button -->
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-success btn-md">Post a Job</a>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+            <div class="container-fluid">
+              <!-- header -->
+              <div class="d-flex justify-content-between mb-4">
+                <span class="h5 d-block text-start">Job title goes here</span>
+              <div class="dropdown">
+                <button class="btn btn-sm shadow-none d-flex align-content-center p-2 batona" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-ellipsis"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Reuse posting</button></li>
+                  <li><button class="dropdown-item" type="button">View Post</button></li>
+                </ul>
+              </div>
+              </div>
+
+              <!-- row container -->
+              <div class="row">
+                <!-- price and either or filled status -->
+                <div class="col-lg-6 col-12">
+                  <span class="text-secondary">
+                    Fixed-Price - 
+                    <!-- satus -->
+                    <span>Filled Jul,9, 2022</span>
+                  </span>
+                </div>
+
+                <!-- Proposals -->
+                <div class="col-lg-2 col-12 text-secondary">
+                  <span class="text-success">34</span>
+                  <span class="text-info">(22 new)</span>
+                  proposals
+                </div>
+
+                <!-- Messaged -->
+                <div class="col-lg-2 col-12 text-secondary">
+                  <span class="text-success">34</span>
+                  <br>
+                  Messaged
+                </div>
+
+                <!-- Hired -->
+                <div class="col-lg-2 col-12 text-secondary">
+                  <span class="text-success">1</span>
+                  <br>
+                  Hired
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your contracts -->
+      <div class="container-fluid py-4 mb-5 posto">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="h5 d-block text-start">Your Contracts</span>
+        <a href="#" class="text-decoration-none">See all contracts</a>
+        </div>
+        <!-- money spent this week -->
+        <span class="h4 d-block text-start text-primary mb-4">
+          $0.00
+          <a
+  tabindex="0"
+  class="btn btn-sm shadow-none"
+  role="button"
+  data-mdb-toggle="popover"
+  data-mdb-trigger="focus"
+  title="Click anywhere outside to dismiss"
+  data-mdb-content="Contract totals do far this week. This may also include ended contracts that were active earlier this week."
+>
+<i class="fas fa-question ms-1 text-white p-1 rounded-circle bg-success fw-bold"></i>
+</a>
+        </span>
+        
+        <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab0"
+              data-mdb-toggle="tab"
+              data-mdb-target="#home1"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Active (0)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab0"
+              data-mdb-toggle="tab"
+              data-mdb-target="#profile1"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Awaiting Funding (1)
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent0">
+          <div
+            class="tab-pane fade show active"
+            id="home1"
+            role="tabpanel"
+            aria-labelledby="home-tab0"
+          >
+
+            <!-- Folder image -->
+            <div class="d-flex justify-content-center my-4">
+              <img src="../assets/images/folder2.png" alt="Folder image" height="90px" width="105px">
+            </div>
+
+            <span class="h5 d-block text-center">
+              No active job posts
+            </span>
+            <p class="text-center">Post a job to the marketplace and let talent come to you.</p>
+
+            <!-- post a job button -->
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-success btn-md">Post a Job</a>
+            </div>
+          </div>
+
+          <!-- Awaiting funding -->
+          <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab0">
+            <div class="container-fluid">
+              <!-- header -->
+              <div class="d-flex justify-content-between mb-4">
+                <span class="h5 d-block text-start">Job title goes here</span>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-success btn-sm rounded-pill me-2">Activate Milestone</button>
+                <div class="dropdown">
+                  <button class="btn btn-sm shadow-none d-flex align-content-center p-2 batona" type="button" id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-ellipsis"></i>
+                  </button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#" class="dropdown-item">View milestones & payments</a></li>
+                    <li><a href="#" class="dropdown-item">Send a message</a></li>
+                    <li><hr><a href="#" class="dropdown-item">View terms & settings</a><hr></li>
+                    <li><a href="#" class="dropdown-item">Give feedback</a></li>
+                    <li><a href="#" class="dropdown-item">Move outside palace</a></li>
+                    <li><a href="#" class="dropdown-item">End contract</a><hr></li>
+                    <li><a href="#" class="dropdown-item">View profile</a></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+              <!-- row container -->
+              <div class="row">
+                <!-- Profile image and name plus local time -->
+                <div class="col-3">
+                  <!-- image -->
+                  <img src="../assets/images/image-1.jpeg" alt="User name" height="78px" width="78px" class="rounded-circle">
+                </div>
+
+                <!-- Name and local time -->
+                <div class="col-9">
+                  <!-- Name -->
+                  <span class="h5 d-block text-start">
+                    User Name
+                  </span>
+
+                  <!-- local time -->
+                  <span class="h6 d-block text-start text-secondary mb-4">
+                    11:17 AM local time
+                  </span>
+
+                  <!-- Status -->
+                  <span class="d-block text-start mb-3">
+                    Active: Waiting for you to fund a new milestone
+                  </span>
+
+                  <!-- Budget -->
+                  <span class="text-secondary d-block">$45.00 Budget</span>
+
+                  <!-- Escrow -->
+                  <span class="text-secondary d-block">$00.00 in Escrow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to work with talents -->
+      <div class="container-fluid py-4 mb-5 posto">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header bg-white" id="flush-headingOne">
+              <button class="accordion-button bg-white text-dark border-0" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <span class="d-block h6 text-start">How to work with talent</span>
+              </button>
+              <p class="py-3 text-secondary">Connect with the talent community, fast and at no cost.</p>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <!-- row -->
+                <div class="row">
+                  <!-- image -->
+                  <div class="col-3">
+                    <img src="../assets/images/post.png" alt="posting job depiction image" height="90px" width="90px">
+                  </div>
+
+                  <!-- notes -->
+                  <div class="col-9 pb-4">
+                    <span class="h6 fw-bold d-block text-start">
+                      1. Post a job to the marketplace
+                    </span>
+                    <p class="py-1">Provide enough detail for great talent to figure out if the work is right for them. <br>
+                      (You can always edit your post, or send an invite to reach out to people directly.)
+                    </p>
+
+                    <a href="#" class="text-decoration-none">Check out examples of effective job posts</a>
+            
+                  </div>
+                  <hr>
+                </div>
+
+                <!-- row -->
+                <div class="row">
+                  <!-- image -->
+                  <div class="col-3">
+                    <img src="../assets/images/cv2.png" alt="CV depiction image" height="90px" width="90px">
+                  </div>
+
+                  <!-- notes -->
+                  <div class="col-9 pb-4">
+                    <span class="h6 fw-bold d-block text-start">
+                      2. Get proposals from talent
+                    </span>
+                    <p class="py-1">
+                      A strong working relationship starts with open communication. Here's your chance to ask about experience, set expectations for what you need, and discuss terms of the work.
+                    </p>
+            
+                  </div>
+                  <hr>
+                </div>
+
+                <!-- row -->
+                <div class="row">
+                  <!-- image -->
+                  <div class="col-3">
+                    <img src="../assets/images/chat.png" alt="Chat depiction image" height="90px" width="90px">
+                  </div>
+
+                  <!-- notes -->
+                  <div class="col-9 pb-4">
+                    <span class="h6 fw-bold d-block text-start">
+                      3. Start working togother
+                    </span>
+                    <p class="py-1">
+                      Once you both agree on terms, colloborate with simple and secure tools like chat, file sharing, and time tarcking.
+                    </p>
+            
+                  </div>
+                  <hr>
+                </div>
+
+                <!-- row -->
+                <div class="row">
+                  <!-- image -->
+                  <div class="col-3">
+                    <img src="../assets/images/thumbs-up2.png" alt="Thumbs up image" height="90px" width="90px">
+                  </div>
+
+                  <!-- notes -->
+                  <div class="col-9 pb-4">
+                    <span class="h6 fw-bold d-block text-start">
+                      4. Pay for work you approve
+                    </span>
+                    <p class="py-1">
+                      Reports are useful for keeping track of payments and reviewing work. As you complete jobs, you can build trusting relationships with talent in a way that helps you both grow.
+                    </p>
+
+                    <a href="#" class="text-decoration-none">
+                      Read about payment protections, billing methods, taxes, and more
+                    </a>
+            
+                  </div>
+                  <hr>
+                </div>
+
+                <!-- row -->
+                <div class="row">
+                  <div class="col-12">
+                    <span class="h5 d-block text-start">
+                      Questions?
+                    </span>
+                    <p>
+                      Visit our 
+                      <a href="#" class="text-decoration-none">Help Center</a>
+                      to learn more tips for finding the right talent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header container -->
+
+  <!-- jquery js link -->
+  <script src="../assets/js/jquery.js"></script>
+
+  <!-- bootstrap js link -->
+  <script src="../assets/js/mdb.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome js link -->
+  <script src="../assets/js/all.js"></script>
+
+  <!-- main js link -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

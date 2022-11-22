@@ -1,0 +1,98 @@
+ /* import font.css */
+
+ @import url(./font.css);
+
+ /* universal styling */
+ * {
+     font-family: "poppins", sans-serif;
+     font-size: 15px;
+ }
+
+ body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+
+  /* navbar */
+  .navbaro {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  /* modal button for profile page */
+  .modo-b {
+    top: 35%;
+    left: 33%;
+  }
+
+
+  /* purchases and rentals filter select drop down */
+
+  .search_select_box select {
+    width: 100%;
+  }
+
+
+  /* index page styling */
+  .banner-two .colot {
+    background-color: #e3e3e3;
+    border-radius: 6px;
+    transition: .3s ease-in;
+  }
+
+  .banner-two .colot:hover {
+    background-color: #c8c7c7;
+  }
+  .banner-two .linka {
+    color: #464646;
+  }
+
+  /* client dashboard page */
+  .posto {
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 12px;
+  }
+
+  .batona {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+
+  .batona:hover {
+    background-color: rgb(226, 226, 226);
+  }
